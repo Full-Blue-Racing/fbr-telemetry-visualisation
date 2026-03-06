@@ -27,3 +27,18 @@ Preview the production build locally:
 ```bash
 pnpm run preview
 ```
+
+## TODO
+
+- [ ] GPS visualisation
+  - [ ] OpenStreetMap map
+  - [ ] Route tracing
+  - [ ] Link from point on map to other telemetry close in time
+- [ ] Export each metric separately from fat CSV
+- [ ] Graphs
+  - [ ] Export graph to image
+  - [ ] Strain gauges
+  - [ ] Acceleration
+  - [ ] Speed
+    - [ ] From GPS
+    - [ ] Integral of acceleration
