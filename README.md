@@ -1,3 +1,14 @@
+```
+______ ____  _____    _______   _                     _
+|  ____|  _ \|  __ \  |__   __| | |                   | |
+| |__  | |_) | |__) |    | | ___| | ___ _ __ ___   ___| |_ _ __ _   _
+|  __| |  _ <|  _  /     | |/ _ \ |/ _ \ '_ ` _ \ / _ \ __| '__| | | |
+| |    | |_) | | \ \     | |  __/ |  __/ | | | | |  __/ |_| |  | |_| |
+|_|    |____/|_|  \_\    |_|\___|_|\___|_| |_| |_|\___|\__|_|   \__, |
+                                                                 __/ |
+                                                                |___/
+```
+
 # FBR Telemetry Visualisation
 
 ## Setup
@@ -31,11 +42,12 @@ pnpm run preview
 ## TODO
 
 - [ ] GPS visualisation
-  - [ ] OpenStreetMap map
+  - [ ] OpenStreetMap map ([leaflet.js](https://github.com/PaulLeCam/react-leaflet))
   - [ ] Route tracing
   - [ ] Link from point on map to other telemetry close in time
-- [ ] Export each metric separately from fat CSV
-- [ ] Graphs
+- [ ] Split screens ([React split-pane](https://github.com/tomkp/react-split-pane))
+- [ ] Export each metric separately from fat CSV ([node-csv](https://github.com/adaltas/node-csv?tab=readme-ov-file))
+- [ ] Graphs ([Chart.js](https://github.com/reactchartjs/react-chartjs-2))
   - [ ] Export graph to image
   - [ ] Strain gauges
   - [ ] Acceleration
