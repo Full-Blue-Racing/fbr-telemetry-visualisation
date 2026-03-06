@@ -39,6 +39,15 @@ Preview the production build locally:
 pnpm run preview
 ```
 
+## Contributing
+
+Please keep AI generated code in contributions to a minimum.
+If AI is used to generate **ANY** code, you **MUST** follow the scheme below to indicate this:
+
+- If an AI model was used to generate less than 30% of the code, you must include `Assisted-by: Model name` in the commit message.
+- If an AI model was used to generate 30% or more of the code, you must include `Co-authored-by: Model name` in the commit message.
+- If an AI model was used to generate 100% of the code, you must include `Generated-by: Model name` in the commit message.
+
 ## TODO
 
 - [ ] GPS visualisation
