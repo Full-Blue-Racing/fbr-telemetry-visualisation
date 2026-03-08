@@ -1,0 +1,74 @@
+namespace Telemetry;
+
+struct Vec3 {
+  x:float;
+  y:float;
+  z:float;
+}
+
+struct GPSFrame {
+  lat:float;
+  lng:float;
+  speed:float;
+  altitude:float;
+  heading:float;
+}
+
+struct IMUFrame {
+  acceleration:Vec3;
+  angular_velocity:Vec3;
+  magnemometer:Vec3;
+}
+
+struct Timestamp {
+  seconds:uint64;
+  nanoseconds:uint64;
+}
+
+struct Nanos {
+  time:uint64;
+}
+
+struct WheelSpeedFrame {
+  front_left:float;
+  front_right:float;
+  back_left:float;
+  back_right:float;
+}
+
+struct DamperPositionFrame {
+  front_left:float;
+  front_right:float;
+  back_left:float;
+  back_right:float;
+}
+
+struct CANBusMessage {
+  id:uint32;
+  rtr:bool;
+  data_len:uint32;
+  data:[uint8:8];
+}
+
+table Frame {
+  // System information
+  time:Timestamp;
+  clocks:Nanos (required);
+
+  // GPS Data
+  gps_frame:GPSFrame;
+
+  // IMU Data
+  imu_frame:IMUFrame;
+
+  // Wheel Speed Data
+  wheel_frame:WheelSpeedFrame;
+
+  // DamperFrame
+  damper_frame:DamperPositionFrame;
+
+  // CAN Bus msgs
+  can_bus:[CANBusMessage];
+}
+
+root_type Frame;
