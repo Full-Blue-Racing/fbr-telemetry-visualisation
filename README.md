@@ -54,9 +54,24 @@ If AI is used to generate **ANY** code, you **MUST** follow the scheme below to 
   - [ ] OpenStreetMap map ([leaflet.js](https://github.com/PaulLeCam/react-leaflet))
   - [ ] Route tracing
   - [ ] Link from point on map to other telemetry close in time
+- [ ] Data deserialisation (flatbuffers, TBC)
 - [ ] Split screens ([React split-pane](https://github.com/tomkp/react-split-pane))
-- [ ] Export each metric separately from fat CSV ([node-csv](https://github.com/adaltas/node-csv?tab=readme-ov-file))
+- [ ] Export of metrics
+  - [ ] CSV ([node-csv](https://github.com/adaltas/node-csv?tab=readme-ov-file))
+  - Maybe other formats?
+- [ ] Zooming to chosen part of graph
+- [ ] Load each car start separately
 - [ ] Graphs ([Chart.js](https://github.com/reactchartjs/react-chartjs-2))
+  - [ ] Wheel speed sensors
+    - [ ] Graph with 4 lines, one for each wheel
+    - [ ] Graph with front sensors
+    - [ ] Graph with back sensors
+    - [ ] Graph for each wheel separately
+  - [ ] Linear position sensors
+    - [ ] Graph for all 4 position sensors
+    - [ ] Graph for front dampers
+    - [ ] Graph for back dampers
+    - [ ] Graph for each damper separately
   - [ ] Export graph to image
   - [ ] Strain gauges
   - [ ] Acceleration
