@@ -20,10 +20,7 @@ export const GraphsTab = () => {
               <div className="pane">
                 <h3>Right Pane</h3>
                 <p>Placeholder</p>
-                <button
-                  className="btn"
-                  onClick={() => setShowBottom(false)}
-                >
+                <button className="btn" onClick={() => setShowBottom(false)}>
                   Hide GPS Panel
                 </button>
               </div>
@@ -36,10 +33,7 @@ export const GraphsTab = () => {
           <div className="pane">
             <h3>Right Pane</h3>
             <p>Placeholder</p>
-            <button
-              className="btn"
-              onClick={() => setShowBottom(true)}
-            >
+            <button className="btn" onClick={() => setShowBottom(true)}>
               Show GPS Panel
             </button>
           </div>
