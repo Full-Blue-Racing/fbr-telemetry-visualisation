@@ -8,7 +8,10 @@
     "check": "biome check --write",
     "dev": "rsbuild dev --open",
     "format": "biome format --write",
+    "convert:csv": "tsx tools/csv-to-bin.ts",
     "generate:fbs": "bin/flatc --ts -o src/generated/ telemetry.fbs",
+    "generate:mock-bin": "tsx tools/generate-mock-bin.ts",
+    "generate:mock-csv": "tsx tools/generate-mock-csv.ts",
     "preview": "rsbuild preview",
     "test": "rstest",
     "test:watch": "rstest --watch"
@@ -28,6 +31,7 @@
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "happy-dom": "^20.0.11",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
 }
