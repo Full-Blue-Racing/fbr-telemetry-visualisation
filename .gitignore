@@ -14,3 +14,10 @@ dist/
 .vscode/*
 !.vscode/extensions.json
 .idea
+
+# FlatBuffers
+bin/
+src/generated/
+
+# Telemetry data
+public/data/
